@@ -6,7 +6,6 @@ const ttl = 60 * 10 * 1; // cache for 10 min
 const cache = new CacheService(ttl);
 const getBlogs = async (req, res, next) => {
   try {
-    console.log(req.params.id)
     let query = {};
     if (req.params.id) {
       let cachedResult = cache.get(`getBlogWithId_${req.params.id}`);
