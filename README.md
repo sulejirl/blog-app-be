@@ -7,7 +7,11 @@ This is a Blog App API
 
 - All Get APIs are cached for 15 minutes
 - If there is a new blog post, blogs cache is deleted
-- If there is a new comment on a post specific posts cache is deleted
+- If there is a new comment on a post, specific posts cache is deleted
+
+## Testing
+
+- APIs can be tested via `npm test` I created a mongo atlas cluster for testing purposes
 
 ## Available Scripts
 
